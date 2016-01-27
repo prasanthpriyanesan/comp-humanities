@@ -18,7 +18,7 @@ public class ExplanationController {
 	public String showExplanation(@PathVariable("mood") String mood, Model model) {
 		model.addAttribute("mood", mood);
 		model.addAttribute("explanation", moodService.getExplanation());
-		
+		//String s = mood + explanation;
 		return "explanation";
 	}
 }
